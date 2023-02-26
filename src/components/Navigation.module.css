@@ -1,0 +1,26 @@
+.navigation {
+  padding: 2rem 0;
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.5rem;
+}
+
+.link-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .show {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+}

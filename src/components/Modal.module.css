@@ -1,0 +1,65 @@
+.modal {
+  display: flex;
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Shift the modal to the center of the page */
+  width: 90%; /* Flexible width */
+  height: 90vh;
+  max-width: 500px; /* Set a maximum width */
+  padding: 20px;
+  background-color: #fefefe;
+  overflow: scroll;
+
+  padding: 3rem 5rem;
+  flex-direction: column;
+  color: rgb(95, 95, 95);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+  gap: 4rem;
+  opacity: 1;
+
+  transition: all 0.3 ease-in-out;
+}
+.show {
+  opacity: 0;
+}
+
+.backdrop {
+  background-color: rgba(36, 36, 36, 0.8);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cross {
+  align-self: flex-end;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  font-size: 2rem;
+}
+.contain {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
